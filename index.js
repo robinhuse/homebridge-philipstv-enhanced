@@ -68,12 +68,12 @@ function HttpStatusAccessory(log, config, api) {
 	// Define URL & JSON Payload for Actions
 
 	// POWER
-	this.power_url = this.protocol + "://" + this.ip_address + ":" + this.portno + "/" + this.api_version + "/powerstate";
+	this.power_url = this.protocol + "://" + this.ip_address + ":" + this.portno + "/" + this.api_version + "/input/key";
 	this.power_on_body = JSON.stringify({
-		"powerstate": "On"
+		"key": "On"
 	});
 	this.power_off_body = JSON.stringify({
-		"powerstate": "Standby"
+		"key": "Standby"
 	});
 
 	// Volume
